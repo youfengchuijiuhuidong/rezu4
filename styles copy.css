@@ -1,0 +1,1123 @@
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局样式设置 */
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* 应用容器样式 */
+#app {
+    min-height: 100vh;
+}
+
+/* Element Plus容器样式 */
+.el-container {
+    min-height: 100vh;
+}
+
+/* 头部样式 */
+.el-header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* 头部内容布局 */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 标题样式 */
+.el-header h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* 头部按钮组样式 */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* 主要内容区域样式 */
+.el-main {
+    padding: 10px !important;
+}
+
+/* 计算器容器样式 */
+#calculator {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 卡片布局样式 */
+.calculation-card,
+.diagram-card,
+.condition-card {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/* 计算和示意图卡片高度设置 */
+.calculation-card,
+.diagram-card {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+/* 条件卡片样式 */
+.condition-card {
+    height: auto;
+    overflow: visible;
+}
+
+/* 卡片标题样式 */
+.calculation-card h2,
+.diagram-card h2,
+.condition-card h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Element Plus卡片样式重置 */
+.el-card {
+    margin: 0;
+    height: 100%;
+    background: none;
+    box-shadow: none;
+}
+
+/* 卡片头部样式 */
+.el-card__header {
+    padding: 10px 15px;
+}
+
+/* 卡片内容区域样式 */
+.el-card__body {
+    padding: 10px;
+}
+
+/* 卡片头部布局 */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 材料选择区域样式 */
+.material-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* 材料标签样式 */
+.material-tag {
+    margin-left: 8px;
+}
+
+/* 厚度输入区域样式 */
+.thickness-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* 输入组样式 */
+.input-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 信息图标样式 */
+.info-icon {
+    color: #909399;
+    cursor: help;
+}
+
+/* 成本信息区域样式 */
+.cost-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* 图表容器样式 */
+.chart-container {
+    height: 300px;
+    margin: 10px 0;
+}
+
+/* 示意图区域样式 */
+.diagram-description {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* 示意图标题样式 */
+.diagram-description h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* 示意图列表样式 */
+.diagram-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.diagram-description li {
+    margin-bottom: 5px;
+}
+
+/* 条件输入区域样式 */
+.condition-inputs {
+    padding: 10px;
+}
+
+/* 输入行样式 */
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* 输入标签样式 */
+.input-label {
+    min-width: 85px;
+    text-align: left;
+    padding-right: 5px;
+    color: #606266;
+    font-size: 14px;
+}
+
+/* 输入框样式 */
+.input-row .el-input {
+    flex: 1;
+    max-width: 280px;
+}
+
+/* 输入框包装器样式 */
+.input-row .el-input__wrapper {
+    padding-right: 0;
+}
+
+/* 输入框附加内容样式 */
+.input-row .el-input-group__append {
+    padding: 0 6px;
+    min-width: 70px;
+    background-color: #f5f7fa;
+    color: #909399;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* 高亮行样式 */
+.highlight-row {
+    background-color: #f0f9eb;
+}
+
+/* 响应式布局断点 */
+@media screen and (max-width: 1024px) {
+    .el-col {
+        margin-bottom: 20px;
+    }
+}
+
+/* 页脚样式 */
+.el-footer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 管道尺寸输入区域样式 */
+.pipe-dimensions {
+    margin-bottom: 20px;
+}
+
+/* 管道尺寸输入组样式 */
+.pipe-dimensions .input-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 15px;
+}
+
+/* 管道尺寸标签样式 */
+.pipe-dimensions .input-group .input-label {
+    min-width: 80px;
+    color: #606266;
+    font-size: 14px;
+}
+
+/* 管道尺寸输入框样式 */
+.pipe-dimensions .input-group .el-input {
+    flex: 1;
+    min-width: 120px;
+    max-width: none;
+}
+
+/* 保温层容器样式 */
+.layers-container {
+    margin-bottom: 20px;
+}
+
+/* 保温层输入区域样式 */
+.layer-inputs {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+/* 保温层选择框样式 */
+.layer-inputs .el-select {
+    flex: 2;
+}
+
+/* 保温层输入框样式 */
+.layer-inputs .el-input {
+    flex: 1;
+}
+
+/* 计算结果区域样式 */
+.calculation-results {
+    margin-top: 20px;
+}
+
+/* 材料规格样式 */
+.material-spec {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* 结果摘要区域样式 */
+.results-summary {
+    margin: 20px 0;
+}
+
+/* 结果摘要标题样式 */
+.results-summary h3 {
+    color: #303133;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #409EFF;
+}
+
+/* 结果描述列表样式 */
+.results-summary .el-descriptions {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* 结果描述标签样式 */
+.results-summary .el-descriptions__label {
+    width: 120px;
+    color: #606266;
+    font-weight: bold;
+}
+
+/* 结果描述内容样式 */
+.results-summary .el-descriptions__content {
+    color: #303133;
+}
+
+/* 高亮值样式 */
+.highlight-value {
+    color: #409EFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 图表工具提示样式 */
+.echarts-tooltip-bold {
+    font-weight: bold;
+}
+
+.echarts-tooltip-item {
+    margin: 6px 0;
+}
+
+/* 表格样式优化 */
+.el-table th {
+    background-color: #f5f7fa !important;
+    color: #606266;
+    font-weight: bold;
+}
+
+.el-table td {
+    padding: 8px 0;
+}
+
+/* 数值列右对齐 */
+.el-table .cell-number {
+    text-align: right;
+}
+
+/* 总结果卡片样式 */
+.total-results .el-descriptions {
+    padding: 15px;
+}
+
+.total-results .el-descriptions__label {
+    width: 120px;
+    color: #606266;
+    font-weight: bold;
+}
+
+.total-results .el-descriptions__content {
+    color: #303133;
+}
+
+/* 表格样式调整 */
+.el-table {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* 表单样式调整 */
+.el-form-item {
+    margin-bottom: 12px;
+}
+
+/* 描述列表样式调整 */
+.el-descriptions {
+    margin: -15px 0;
+}
+
+.el-descriptions__cell {
+    padding: 8px !important;
+}
+
+/* 按钮容器样式 */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button-container .el-button {
+    width: 120px;
+}
+
+/* 结果容器样式 */
+.results-container {
+    margin-top: 20px;
+}
+
+.results-container h3 {
+    color: #303133;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #409EFF;
+}
+
+/* 表格样式优化 */
+.el-table {
+    margin-bottom: 20px;
+}
+
+.el-table th {
+    background-color: #f5f7fa !important;
+    color: #606266;
+    font-weight: bold;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.el-table td {
+    padding: 12px 0;
+}
+
+/* 数值和单位样式 */
+.unit {
+    color: #909399;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+/* 表格内数值样式 */
+.el-table .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 基础参数表格样式 */
+.basic-params-table {
+    margin-bottom: 10px !important;
+}
+
+.basic-params-table:last-of-type {
+    margin-bottom: 0;
+}
+
+.basic-params-table .el-table__header-wrapper {
+    background-color: #f5f7fa;
+}
+
+.basic-params-table th {
+    background-color: #f5f7fa !important;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.basic-params-table td {
+    padding: 12px 0;
+    background-color: #fafafa;
+}
+
+/* 表格宽度控制 */
+.results-container .el-table {
+    width: 100% !important;
+}
+
+.results-container .el-table__body-wrapper {
+    overflow-x: hidden;
+}
+
+/* 表格列宽度优化 */
+.basic-params-table .el-table__header th {
+    flex: 1;
+    min-width: auto !important;
+}
+
+/* 温度分布表格样式 */
+.temperature-table .el-table__row:hover td {
+    background-color: #f0f9eb;
+}
+
+/* 表格内数值样式 */
+.el-table .value {
+    font-weight: 500;
+    color: #303133;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .el-table {
+        font-size: 12px;
+    }
+    
+    .el-table th,
+    .el-table td {
+        padding: 6px 0;
+    }
+    
+    .unit {
+        font-size: 11px;
+    }
+    
+    .input-label {
+        min-width: 120px;
+        font-size: 13px;
+    }
+    
+    .input-row .el-input {
+        max-width: calc(100% - 120px);
+    }
+    
+    .input-row .el-input-group__append {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+    
+    .condition-card .el-card__body {
+        padding: 10px;
+    }
+    
+    .input-row {
+        padding-left: 10px;
+    }
+    
+    .pipe-dimensions .input-group .el-input {
+        max-width: none;
+    }
+}
+
+/* 标题样式 */
+h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* 响应式布局调整 */
+@media screen and (max-width: 1400px) {
+    .calculation-section,
+    .diagram-section,
+    .condition-section {
+        height: auto;
+        min-height: 500px;
+    }
+    
+    .diagram-container {
+        height: 400px;
+    }
+}
+
+/* 材料弹出框样式 */
+.material-dialog {
+    max-width: 500px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.material-dialog .el-dialog__header {
+    margin: 0 !important;
+    padding: 15px 20px !important;
+    background-color: #f5f7fa !important;
+    border-bottom: 1px solid #e4e7ed !important;
+}
+
+.material-dialog .el-dialog__body {
+    padding: 20px !important;
+}
+
+.material-dialog .material-dialog-content {
+    text-align: center;
+}
+
+.material-dialog .material-info {
+    text-align: left;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.material-dialog img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.material-dialog h3 {
+    font-size: 18px;
+    color: #303133;
+    margin-bottom: 15px;
+}
+
+.material-dialog p {
+    font-size: 14px;
+    color: #606266;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* 示意图引线动画 */
+.layer-line {
+    animation: dash 1.5s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: -8;
+    }
+}
+
+/* 按钮悬停效果 */
+.layer-button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.layer-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 引线样式 */
+.layer-line {
+    stroke-dasharray: 5,5;
+    animation: dash 20s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+/* 材料选择和厚度输入布局 */
+.material-params {
+    padding: 10px 0;
+}
+
+.material-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+/* 材料行样式 */
+.material-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+/* 参数行样式 */
+.params-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.material-select {
+    flex: 1;
+    width: 100% !important;
+}
+
+.material-select .el-input__wrapper {
+    padding: 0 8px !important;
+}
+
+.material-select .el-input__inner {
+    font-size: 14px !important;
+}
+
+.material-select .el-select__tags {
+    max-width: calc(100% - 30px) !important;
+}
+
+.thickness-input {
+    flex: 0 0 auto;
+    width: 120px !important;
+}
+
+.price-input {
+    flex: 0 0 auto;
+    width: 120px !important;
+}
+
+.thickness-input .el-input__wrapper,
+.price-input .el-input__wrapper {
+    padding-right: 0 !important;
+}
+
+.thickness-input .el-input-group__append,
+.price-input .el-input-group__append {
+    padding: 0 8px !important;
+    background-color: #f5f7fa !important;
+    color: #909399 !important;
+    font-size: 12px !important;
+    text-align: center;
+}
+
+.thickness-label {
+    min-width: 45px;
+    font-size: 14px;
+    color: #606266;
+}
+
+/* 下拉选项样式优化 */
+.el-select-dropdown__item {
+    padding: 0 8px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+}
+
+/* 选择框箭头图标调整 */
+.material-select .el-input__suffix {
+    right: 0 !important;
+}
+
+.material-select .el-input__icon {
+    width: 20px !important;
+}
+
+/* 温度分布可视化样式 */
+.temperature-visualization {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.temperature-visualization h3 {
+    color: #303133;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #409EFF;
+}
+
+#temperatureChart {
+    background-color: #fafafa;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* 移动端温度图表适配 */
+@media screen and (max-width: 768px) {
+    .temperature-visualization {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    #temperatureChart {
+        height: 250px !important;
+    }
+}
+
+/* SVG提示框样式 */
+.layer-tooltip {
+    pointer-events: none;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.tooltip-bg {
+    pointer-events: none;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+/* SVG容器层级控制 */
+#svg-container {
+    position: relative;
+}
+
+#svg-container svg {
+    position: relative;
+    z-index: 1;
+}
+
+.layer-tooltip, .tooltip-bg {
+    z-index: 2;
+}
+
+/* 输入框提示符样式 */
+.el-input__suffix {
+    right: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.el-input__suffix .el-icon-info {
+    color: #409EFF !important;
+    font-size: 18px !important;
+    cursor: help;
+    transition: all 0.3s ease;
+    margin-left: 4px !important;
+    padding: 4px !important;
+    border-radius: 50% !important;
+    background-color: #ecf5ff !important;
+}
+
+.el-input__suffix .el-icon-info:hover {
+    color: #fff !important;
+    background-color: #409EFF !important;
+    transform: scale(1.1);
+}
+
+/* 工具提示样式 */
+.el-tooltip__popper {
+    max-width: 300px !important;
+    line-height: 1.6 !important;
+    font-size: 14px !important;
+    padding: 12px 16px !important;
+    background-color: #fff !important;
+    border: 1px solid #e4e7ed !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 4px !important;
+}
+
+.el-tooltip__popper.is-light {
+    background: #fff !important;
+    border: 1px solid #e4e7ed !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 基准方案按钮组样式 */
+.baseline-schemes {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.baseline-schemes h3 {
+    color: #303133;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #409EFF;
+}
+
+.scheme-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scheme-buttons .el-button {
+    min-width: 100px;
+    margin: 5px;
+}
+
+.current-scheme {
+    color: #303133;
+    font-size: 16px;
+    margin: 10px 0;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 输入区域卡片样式 */
+.input-section {
+    margin-bottom: 20px;
+    background-color: #fff9f0;
+    border: 1px solid #ffa940;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.input-section:hover {
+    box-shadow: 0 2px 8px rgba(255, 169, 64, 0.2);
+}
+
+.input-section .el-card__body {
+    padding: 15px;
+}
+
+.input-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #d46b08;
+    font-size: 16px;
+    border-bottom: 1px solid #ffa940;
+    padding-bottom: 10px;
+}
+
+/* 输入组件样式调整 */
+.input-section .el-input {
+    width: 100%;
+}
+
+.input-section .el-select {
+    width: 100%;
+}
+
+/* 输入标签样式调整 */
+.input-section .input-label {
+    min-width: 100px;
+    color: #d46b08;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 材料选择区域样式调整 */
+.input-section .material-params {
+    margin-top: 15px;
+}
+
+.input-section .material-input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-section .material-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.input-section .params-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-section .material-select {
+    flex: 1;
+    width: 100% !important;
+}
+
+.input-section .thickness-label {
+    min-width: 60px;
+    color: #d46b08;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 条件输入区域样式调整 */
+.input-section .condition-inputs {
+    padding: 10px 0;
+}
+
+.input-section .input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-section .input-row:last-child {
+    margin-bottom: 0;
+}
+
+/* 输入框样式调整 */
+.input-section .el-input__wrapper {
+    background-color: #fff;
+    border: 1px solid #ffa940;
+}
+
+.input-section .el-input__wrapper:hover {
+    border-color: #ff7a45;
+}
+
+.input-section .el-input__wrapper.is-focus {
+    border-color: #ff7a45;
+    box-shadow: 0 0 0 1px #ff7a45;
+}
+
+/* 选择框样式调整 */
+.input-section .el-select .el-input__wrapper {
+    background-color: #fff;
+    border: 1px solid #ffa940;
+}
+
+.input-section .el-select .el-input__wrapper:hover {
+    border-color: #ff7a45;
+}
+
+.input-section .el-select .el-input__wrapper.is-focus {
+    border-color: #ff7a45;
+    box-shadow: 0 0 0 1px #ff7a45;
+}
+
+/* 帮助对话框样式 */
+.help-dialog-container .el-message-box {
+    max-width: 600px;
+    width: 90%;
+}
+
+.help-content {
+    text-align: left;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 10px 0;
+}
+
+.help-content h2 {
+    text-align: center;
+    color: #409EFF;
+    margin-bottom: 15px;
+}
+
+.help-content h3 {
+    color: #303133;
+    border-bottom: 1px solid #ebeef5;
+    padding-bottom: 8px;
+    margin: 20px 0 15px 0;
+}
+
+.help-content h4 {
+    color: #606266;
+    margin: 15px 0 10px 0;
+}
+
+.help-content p {
+    color: #606266;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.help-content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.help-content li {
+    color: #606266;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.help-content strong {
+    color: #303133;
+}
+
+/* 橙色主题按钮样式 */
+.orange-theme-button {
+    background-color: transparent !important;
+    border-color: #ffa940 !important;
+    color: #ffa940 !important;
+    padding: 8px 20px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.orange-theme-button:hover {
+    background-color: rgba(255, 169, 64, 0.1) !important;
+    border-color: #ff7a45 !important;
+    color: #ff7a45 !important;
+    box-shadow: 0 2px 8px rgba(255, 169, 64, 0.2) !important;
+}
+
+.orange-theme-button:active {
+    background-color: rgba(255, 169, 64, 0.2) !important;
+    border-color: #d46b08 !important;
+    color: #d46b08 !important;
+}
+
+/* 计算按钮容器样式 */
+.calculation-button-container {
+    margin: 15px 0;
+    text-align: center;
+} 
